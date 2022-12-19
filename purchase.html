@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+     <link rel="icon" type="image/x-icon" href="images/my logo.png">
+      <title>Shine Utensils</title>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif
+} 
+
+body {
+    padding: 5px
+}
+#cross{
+    color: black;
+    margin-top: 10%;
+    font-size: 30px;
+    margin-left:95% ;
+}
+p {
+    margin: 0%
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden
+}
+
+.box-1 {
+    max-width: 450px;
+    padding: 10px 40px;
+    user-select: none
+}
+
+.box-1 img.pic {
+    width: 20px;
+    height: 20px;
+    object-fit: cover
+}
+
+.box-1 img.mobile-pic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover
+}
+
+.box-1 .name {
+    font-size: 11px;
+    font-weight: 600
+}
+
+.dis {
+    font-size: 12px;
+    font-weight: 500
+}
+
+.box-2 {
+    max-width: 450px;
+    padding: 10px 40px
+}
+
+.box-2 .box-inner-2 input.form-control {
+    font-size: 12px;
+    font-weight: 600
+}
+
+.box-2 .box-inner-2 .inputWithIcon {
+    position: relative
+}
+
+.box-2 .box-inner-2 .inputWithIcon span {
+    position: absolute;
+    left: 15px;
+    top: 8px
+}
+
+.box-2 .box-inner-2 .inputWithcheck {
+    position: relative
+}
+
+.box-2 .box-inner-2 .inputWithcheck span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+    top: 6px
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    outline: none;
+    /* border: 1px solid #7700ff */
+}
+
+.border:focus-within {
+     border-radius: 1.3px solid !important 
+} 
+
+.box-2 .card-atm .form-control {
+    border: none;
+    box-shadow: none
+}
+
+.form-select {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.address .form-control.zip {
+    border-radius: 0;
+    border-bottom-left-radius: 10px
+}
+
+.address .form-control.state {
+    border-radius: 0;
+    border-bottom-right-radius: 10px
+}
+
+.box-2 .box-inner-2 .btn.btn-outline-primary {
+    width: 120px;
+    padding: 10px;
+    font-size: 11px;
+    padding: 0% !important;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600
+}
+
+.box-2 .box-inner-2 .btn.btn-primary {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    border: none;
+    padding: 10px
+}
+
+.box-2 .box-inner-2 .btn.btn-primary:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.box-2 .box-inner-2 .btn.btn-primary .fas {
+    font-size: 13px !important;
+    color: whitesmoke
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 200px
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%
+}
+
+.carousel-control-prev {
+    transform: translateX(-50%);
+    opacity: 1
+}
+
+.carousel-control-prev:hover .fas.fa-arrow-left {
+    transform: translateX(-5px)
+}
+
+.carousel-control-next {
+    transform: translateX(50%);
+    opacity: 1
+}
+
+.carousel-control-next:hover .fas.fa-arrow-right {
+    transform: translateX(5px)
+}
+
+.fas.fa-arrow-left,
+.fas.fa-arrow-right {
+    font-size: 0.8rem;
+    transition: all .2s ease
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #f8f9fa;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform-origin: center;
+    opacity: 1
+}
+
+.fas.fa-times {
+    color: red
+}
+
+.fas,
+.fab {
+    color: #6d6c6d
+}
+
+::placeholder {
+    font-size: 12px
+}
+
+.couponCode {
+    text-transform: uppercase;
+    font-size: 0.7rem
+}
+
+#code {
+    pointer-events: none;
+    font-weight: 600
+}
+
+.close {
+    cursor: pointer
+}
+
+.info {
+    transform: translateX(-500px);
+    animation: moving 1.5s;
+    animation-fill-mode: forwards
+}
+
+.updates {
+    transform: translateX(-500px);
+    animation: moving 1.7s;
+    animation-fill-mode: forwards;
+}
+
+.different {
+    transform: translateX(-500px);
+    animation: moving 1.9s;
+    animation-fill-mode: forwards;
+}
+
+.black {
+    transform: translateX(-500px);
+    animation: moving 2.1s;
+    animation-fill-mode: forwards;
+}
+
+.white {
+    transform: translateX(-500px);
+    animation: moving 2.3s;
+    animation-fill-mode: forwards;
+}
+
+.pastel {
+    transform: translateX(-500px);
+    animation: moving 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.footer {
+    transform: translateX(-500px);
+    animation: moving 2.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moving {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.box-2 {
+    transform: translateY(-500px);
+    animation: img-top 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.user {
+    transform: translateY(-500px);
+    animation: img-top 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.userdetails {
+    transform: translateY(-500px);
+    animation: img-top 2.0s;
+    animation-fill-mode: forwards;
+}
+
+.imgdetails {
+    transform: translateY(-500px);
+    animation: img-top 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 700px;
+        margin: 10px auto
+    }
+#cross{
+    margin-left: 90%;
+}
+    .box-1,
+    .box-2 {
+        max-width: 600px;
+        padding: 20px 90px;
+        margin: 20px auto
+    }
+
+    .box-2 {
+        transform: translateX(-500px);
+        animation: box-side 2.6s;
+        animation-fill-mode: forwards
+    }
+
+    @keyframes box-side {
+        0% {
+            opacity: 0;
+            transform: translateX(-500px)
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0px)
+        }
+    }
+}
+
+@media (max-width:426px) {
+
+    .box-1,
+    .box-2 {
+        max-width: 400px;
+        padding: 20px 10px
+    }
+
+    ::placeholder {
+        font-size: 9px
+    }
+}
+.form {
+  display: grid;
+  gap: 2em;
+}
+
+.form__radios {
+  display: grid;
+  gap: 1em;
+}
+
+.form__radio {
+  align-items: center;
+  background-color: #fefdfe;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+  display: flex;
+  padding: 1em;
+}
+
+.form__radio label {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+}
+
+.icon {
+  block-size: 1em;
+  display: inline-block;
+  fill: currentColor;
+  inline-size: 1em;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+    <a id="cross" href="index.html"><i class="bi bi-x-lg" ></i></a>
+        <style>
+            @media(max-width:800px) {
+                #styles{
+                    width: 50%!important;
+                }
+                
+            }
+            @media(max-width:460px) {
+                #styles{
+                    width: 100%!important;
+                    margin-left: 0%!important;
+                }
+                
+            }
+            #styles{
+                width: 40%;
+    /* margin: 15px; */
+    /* box-sizing: border-box; */
+    /* float: left; */
+    border-radius: 30px;
+    /* cursor: pointer; */
+    /* padding-top: 10px; */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+    margin-left: 30%;
+    outline: black;
+    align-items: center; justify-content: center; display: flex;
+            }
+        </style>
+        <div id="styles" >
+        <div class="box-2">
+            <div class="box-inner-2">
+                <div>
+                   
+                    <p class="fw-bold">SHIPPING AND BILLING DETAILS</p>
+                </div>
+               
+                <form action="">
+                    <div class="mb-3">
+                        <p class="dis fw-bold mb-2">Your Full Name:</p> <input class="form-control" type="name"  placeholder="ABCD..." required>
+                    </div>
+                    <div class="mb-3">
+                        <p class="dis fw-bold mb-2">Phone Number:</p> <input class="form-control" type="tel" minlength="11"  placeholder="0333-1234567" required>
+                    </div>
+                    <div class="mb-3">
+                        <p class="dis fw-bold mb-2">Residential Address:</p><input class="form-control" type="address" placeholder="somewhere..." required>
+                    </div>
+                    <div class="mb-3">
+                        <p class="dis fw-bold mb-2">Email address</p> <input class="form-control" type="email" placeholder="example@gmail.com">
+                    </div>
+                    <div>
+                        <p class="fw-bold">Payment Details</p>
+                        <p class="dis mb-3">Complete your purchase by providing your payment details</p>
+                    </div>
+                    <fieldset>
+                        <h6>Payment Method</h6>
+                        <div class="form__radios">
+                          <div class="form__radio">
+                            <label for="visa"><i class="fab fa-cc-visa"></i>Visa Payment</label>
+                            <input id="visa" name="payment-method" type="radio" />
+                          </div>
+                  
+                          <div class="form__radio">
+                            <label for="paypal"><i class="fab fa-paypal"></i>PayPal</label>
+                            <input id="paypal" name="payment-method" type="radio" />
+                          </div>
+    
+                          <div class="form__radio">
+                            <label for="paypal"> <img src="https://cdn-icons-png.flaticon.com/512/5110/5110095.png" alt="" width="10%">Cash On Delivery</label>
+                            <input id="paypal" name="payment-method" type="radio" />
+                          </div>
+                  
+                          <div class="form__radio">
+                            <label for="mastercard"><i class="fab fa-cc-mastercard"></i>Master Card</label>
+                            <input id="mastercard" name="payment-method" type="radio" />
+                          </div>
+                        </div>
+                      </fieldset>
+                        <div class="address">
+                            <p class="dis fw-bold mb-3">Billing address</p> <select class="form-select" aria-label="Default select example" required>
+                                <option selected hidden>pakistan</option>
+                                <option value="1">karachi</option>
+                                <option value="2">lahore</option>
+                                <option value="3">Islamabad</option>
+                                <option value="4">Balochistan</option>
+                            </select>
+                            <div class="d-flex"> <input class="form-control zip" type="text" placeholder="Area" required><input class="form-control state" type="text" placeholder="Block" required> </div>
+                            <div class="d-flex flex-column dis mt-3">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p>Subtotal</p>
+                                    <p>PKR:</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <p class="pe-2">Discount <span class="d-inline-flex align-items-center justify-content-between bg-light px-2 couponCode"> <span id="code" class="pe-2"></span> <span class="fas fa-times close"></span> </span> </p>
+                                    </div>
+                                    <p>PKR:</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p>VAT<span>(20%)</span></p>
+                                    <p>PKR:</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p>Shipping Fee</p>
+                                    <p>PKR:</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p class="fw-bold">Total</p>
+                                    <p class="fw-bold">PKR:</p>
+                                </div>
+                                <div class=" mt-2"> <button class="btn btn-primary" type="submit"> Proceed To Pay&nbsp<span>PKR:</span></button></div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+         
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function fun3344(){
+    alert("ThankYou For purchasing");
+}
+</script>
+</body>
+</html>

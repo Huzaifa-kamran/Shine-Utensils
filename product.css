@@ -1,0 +1,105 @@
+*{
+margin: 0;
+padding: 0;
+}
+.tol{
+color: black;
+    text-decoration: none;
+}
+.card-title{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rating i:hover{
+    color: #333;
+}
+.order{
+    font-weight: bold;
+}
+  
+.cards-section{
+    margin-top: 80px;
+}
+.card:hover{
+
+    box-shadow: 1px 5px 8px 2px gray;
+}
+
+.name{
+    color: #000;
+}
+.profession{
+
+    text-align: center;
+}
+.swiper{
+    width: 950px;
+}
+.name-profession  .name{
+    font-size: 30px; 
+    font-weight: 600;
+}
+
+.name-profession  .profession{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.card  .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card .rating i{
+    font-size: 18px;
+    color: darkgoldenrod;
+    margin: 0 2px;
+}
+.text-light{
+    text-decoration: none;
+}
+.fa-brands{
+   color: black;
+    font-size: 25px;
+    margin: 8px;
+}
+.fa-facebook:hover{
+    color: #1360ad;
+}
+.fa-instagram:hover{
+   color: purple;
+}
+.fa-twitter:hover{
+    color: #55ACEE;
+}
+.card-button{
+    background-color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 15px;
+    padding:8px 12px;
+}
+.card-button:hover{
+    background-color: rgb(197, 151, 35);
+    color: #000;
+}
+.card-button a{
+    text-decoration: none;
+    color: #fff;
+}
+.card-button:hover a{
+    background-color: rgb(197, 151, 35);
+    font-weight: 600;
+    color: #000;
+}
+.swiper-pagination{
+    top: 135%;
+} 
+.about-card{
+    height: 200px;
+}

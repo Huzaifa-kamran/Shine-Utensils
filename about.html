@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/b63f19595b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- link swipers -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="app.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/my logo.png">
+    <title>Shine Utensils</title>
+  </head>
+  <style>
+   @media (max-width:576px) {
+  .about-card{
+    border-right:none ;
+    border-bottom:1px solid gray ;
+  }
+  .about-para{
+    font-size: 15px;
+  }
+}
+@media (min-width:576px) and (max-width:768px) {
+  #user-card{
+   border: none;  
+  }
+}
+@media (min-width:768px) and (max-width:992px) {
+  #user-card{
+   border: none;  
+  }
+}
+@media (min-width:992px) and (max-width:1200px) {
+  
+}
+    
+    body {
+      background: url(images/backgroung.jpg) no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+  <body>
+     <!-- Navbar Starts -->
+ <nav class="navbar navbar-expand-lg fixed-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" data-aos="slide-right"><img src="images/my logo.png" alt="" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" data-aos="slide-up" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link nav-hover" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-hover" href="about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-hover" href="contactus.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-hover" href="comparision.html">Comparision</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  nav-hover" href="#" role="button">
+            Categories
+          </a>
+          <ul class="dropdown-content">
+            <li><a class="dropdown-item" href="kitchentool.html">Kitchen Tools</a></li>
+            <li><a class="dropdown-item" href="ceramics.html">Ceramics</a></li>
+            <li><a class="dropdown-item" href="BBQ's.html">BBQ Items</a></li>
+            <li><a class="dropdown-item" href="Cutlery.html">Cutlery</a></li>
+            <li><a class="dropdown-item" href="baking.html">Baking Tools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- Navbar Ends -->
+
+    <div class="container about-top justify-content-center d-flex">
+      <div class="waviy" data-aos="fade-down">
+        <span style="--i:1">A</span>
+        <span style="--i:2">B</span>
+        <span style="--i:3">O</span>
+        <span style="--i:4">U</span>
+        <span style="--i:5">T</span>
+        <span style="--i:6"></span>
+        <span style="--i:7">U</span>
+        <span style="--i:8">S</span>
+       </div>
+    </div>
+
+    <section class="about-sec" data-aos="fade-up">
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-3 ">
+          <div class="about-card" id="item-card" data-aos="fade-right">
+          <img src="images/bag.png" alt="" class="about-icon">
+          <div class="about-card-text">
+          <h4 class="text-center">More than 100 + items Available</h4>
+        </div>
+        </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-3 ">
+            <div class="about-card" id="user-card" data-aos="fade-up">
+              <img src="images/award.png" alt="" class="about-icon">
+              <div class="about-card-text">
+              <h4 class="text-center">Direct purchase from manufacturer</h4>
+            </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-3 ">
+            <div class="about-card" id="heart-card" data-aos="fade-up">
+              <img src="images/heart.png" alt="" class="about-icon">
+              <div class="about-card-text">
+              <h4 class="text-center">98% Customer Feedback
+              </h4>
+            </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-3 ">
+            <div class="about-card" id="deli-card" data-aos="fade-left">
+              <img src="images/fast-delivery.png" alt="" class="about-icon">
+              <div class="about-card-text">
+              <h4  class="text-center">Fastest Shipping Facility</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="divider line double-razor"><span data-aos="fade-up">ABOUT US</span> </h2>
+      </div>
+      <div class="container" >
+        <h5 class="text-center about-para" data-aos="flip-right" >
+         <span class="text-warning fw-bold">Shine Utensils</span>- has been serving best quality and genuine items for over a decade now. Whatever you want, 
+          we have it.Shine Utensils is here to provide online shoppers the same amount of commitment on quality right 
+          at Your doorstep. We take great pride in offering the best experience of online shopping by ensuring that you only 
+          receive genuine products. Rest assured, you will not have anything that comes from a Grey Market, is Used, is 
+          Defective, is Damaged. We will not give you anything that is of low quality, we will never give you anything that 
+          we wouldn’t use ourselves and we will surely never provide anything that you might want to return later.
+        </h5>
+      </div>
+      <div class="container">
+        <h2 class="divider line double-razor"><span data-aos="fade-up">PAYMENT METHODS</span></h2>
+      </div>
+      <div class="container">
+      <h4 data-aos="fade-right"><u> Online Payments:</u></h4>
+      <h5 data-aos="fade-left" class="about-para">
+        We have a wide range of online payment options, whether it’s just a credit or debit card or it’s your Jazz Cash mobile account, we have you covered.
+      </h5>
+      <h4 class="mt-3" data-aos="fade-right"><u> Cash on Delivery (COD):</u></h4>
+      <h5 data-aos="fade-left" class="about-para">Don’t want to pay online, pay via cash instead. We can come collect right on your doorstep. Your ease is our key performance indicator.</h5>
+      </div>
+    </section>
+
+
+    <section class="review-sec">
+      <div class="swiper mySwiper container">
+        <div class=" swiper-wrapper content">
+          <div class="swiper-slide  card"> 
+            <div class="card-body text-center">
+              <h4 class="card-text">Marshal</h4>
+              <div class="container d-flex justify-content-center ">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+              </div>
+              <div class="rev-text">
+              <p class="card-text cust-rev">Very good service. This wrap was a power of 10! Not only does it look exquisite, but it also adds value. As promised, 
+                so delivered. I highly recommend it.
+              </p>
+            </div>
+            </div>
+        </div>
+          <div class="swiper-slide  card">
+            <div class="card-body text-center">
+              <h4 class="card-text">Alexander</h4>
+              <div class="container d-flex justify-content-center ">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+              </div>
+            <div class="rev-text">
+              <p class="card-text cust-rev">They really care about building positive relationships with clients, I recommend them.</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide  card">
+            <div class="card-body text-center">
+              <h4 class="card-text">Angelina</h4>
+              <div class="container d-flex justify-content-center ">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="gray-stars">
+              </div>
+            <div class="rev-text">
+              <p class="card-text cust-rev">No unnecessary waiting, immediate shipment. Great boxboard and beautiful packaging inside. 
+                Clear exchange and return policies plus fast response time.</p>
+            </div>
+            </div>               
+              </div>
+          <div class="swiper-slide  card">
+            <div class="card-body text-center">
+              <h4 class="card-text">Tim David</h4>
+              <div class="container d-flex justify-content-center ">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="gray-stars">
+              </div>
+            <div class="rev-text">
+              <p class="card-text cust-rev">Very fast order fulfillment time. Very nice service staff, they take good care of the customers. Really well-packaged parcel. 
+                Very successful shopping.</p>
+            </div>
+            </div>               
+        </div>
+        <div class="swiper-slide  card">
+          <div class="card-body text-center">
+            <h4 class="card-text">Mr. Farooq</h4>
+            <div class="container d-flex justify-content-center ">
+              <img src="images/tm-stars.svg" alt="" class="stars">
+              <img src="images/tm-stars.svg" alt="" class="stars">
+              <img src="images/tm-stars.svg" alt="" class="stars">
+              <img src="images/tm-stars.svg" alt="" class="stars">
+              <img src="images/tm-stars.svg" alt="" class="stars">
+            </div>
+          <div class="rev-text">
+            <p class="card-text cust-rev">I received my parcel unharmed beautifully packed and on time and same as shown in picture. 
+              I am satisfied and will recommend to others as well.
+           </p>
+          </div>
+          </div>
+        </div>           
+      <div class="swiper-slide  card">          
+        <div class="card-body text-center">
+          <h4 class="card-text">Marina</h4>
+          <div class="container d-flex justify-content-center ">
+            <img src="images/tm-stars.svg" alt="" class="stars">
+            <img src="images/tm-stars.svg" alt="" class="stars">
+            <img src="images/tm-stars.svg" alt="" class="stars">
+            <img src="images/tm-stars.svg" alt="" class="stars">
+            <img src="images/tm-stars.svg" alt="" class="gray-stars">
+          </div>
+        <div class="rev-text">
+          <p class="card-text cust-rev">On-time, without stress, as announced. One telephone conversation with the service representative was enough and all my doubts disappeared.
+          </p>
+        </div>
+        </div>  
+          </div>
+          <div class="swiper-slide  card">          
+            <div class="card-body text-center">
+              <h4 class="card-text">Philips</h4>
+              <div class="container d-flex justify-content-center ">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+                <img src="images/tm-stars.svg" alt="" class="stars">
+              </div>
+            <div class="rev-text">
+              <p class="card-text cust-rev">Thanks to this wrap, the package looks even more valuable. Quick response to data changes and no problem at all. . Original products at good prices. I like this.
+              </p>
+            </div>
+            </div>  
+              </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev "></div>
+        
+      </div>
+    </section>
+
+   <!-- footer starts -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>P.E.C.H.S Block 2, Karachi, Pakistan </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>9876543210 0</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>shineutensils@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"><img src="images/my logo.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <h6 class="intro-line"><i> "Think once,think twice,think <span class="text-warning"> Shine</span>"</i>
+                  <p>
+                  <h6 class="intro-line2"> <span class="text-warning"> Shine</span>-brighten your Kitchen</h6>
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram insta-bg"></i></a>
+                <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p pinterest-bg"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="comparision.html">Comparision</a></li>
+                <li><a href="login.html">log In</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don’t miss to subscribe to our new feeds.</p>
+              </div>
+              <div class="subscribe-form">
+                <form class="sear-form">
+                  <label for="search">
+                    <input class="sear-input" type="text" required="" placeholder="Search" id="search">
+                    <div class="fancy-bg"></div>
+                    <div class="search">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                        <g>
+                          <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <button class="close-btn" type="reset">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+            <div class="copyright-text">
+              <p>Payment Methods:</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-right">
+            <div class="footer-menu">
+              <ul>
+                <li><img src="images/mastercard.jpeg" alt="master card image" class="payment-logo"></li>
+                <li><img src="images/visa-logo-800x450.jpg" alt="visa logo" class="payment-logo"></li>
+                <li><img src="images/Paypal-logo.png" alt="paypal logo" class="payment-logo"></li>
+                <li><img src="images/apple-pay.png" alt="apple-pay logo" class="payment-logo"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- swiper link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(function () {
+          $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 70) {
+              $(".navbar").addClass("active");
+            } else {
+              $(".navbar").removeClass("active");
+            }
+          });
+        });
+        AOS.init({
+          duration: 1200,
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 2000,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            // when window width is >= 100px
+          100: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            800: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            992:{
+              slidesPerView:4,
+            
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
